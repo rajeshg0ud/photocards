@@ -1,0 +1,49 @@
+:root {
+    --background: #3C343D;
+    --background-card: #68626C;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    .background {
+    background-color: var(--background);
+    display: grid;
+    place-items: center; height: 100vh;
+    }
+    .gallery {
+    display: flex; left: calc(50% 330px);
+    }
+
+    .card {
+        position: relative;
+        left: 0px;
+        width: 220px;
+        height: 300px;
+        background-color: var(--background-card);
+        border-radius: 8px;
+        transition: 1s ease-in-out;
+        overflow: hidden;
+        box-shadow: 7px 10px rgba(0, 0, 0, 0.5);
+        display: flex;
+    }
+    figure{
+        margin: 0px;
+        padding: 7px;
+    }
+    .card:not(:first-child) { margin-left: -45px;
+    }
+    .card:hover {
+        transform: translate(-56px, -25px);
+    font-weight: bold;
+    cursor: pointer;
+    
+    }
+    .card:hover .card { left: 55px;
+    }
+    .card img {
+    align-self: flex-start;
+    height:290px;
+    width: 208px;
+    object-fit: cover;
+    border-radius: 4px;
+    }
